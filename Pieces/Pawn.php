@@ -5,8 +5,6 @@
  * Time: 17:26
  */
 
-include "ChessBoard.php";
-
 class Pawn extends ChessBoard
 {
 

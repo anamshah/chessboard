@@ -1,0 +1,36 @@
+<?php
+/**
+ * Created by Anam Shah.
+ * Date: 27-08-2018
+ * Time: 18:37
+ */
+
+class Rook extends ChessBoard
+{
+    var $valid_moves = [];
+
+    function GetMoves($strStartingMove)
+    {
+        /*get row*/
+        $row = parent::getRow($strStartingMove);
+
+        /*get column index*/
+        $col = parent::getColumn($strStartingMove);
+
+        foreach ($this->row_letters as $key => $value) {
+            if ($key == $row) {
+                for ($i = 1; $i <= 8; $i++) {
+                    if ($i != $col)
+                        $this->valid_moves[] = $value . $i;
+                }
+            }
+            if ($key != $row)
+                $this->valid_moves[] = $value . $col;
+
+        }
+
+        return $this->valid_moves;
+
+    }
+
+}

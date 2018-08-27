@@ -6,6 +6,9 @@
  */
 
 
-include "Pawn.php";
+
+include "autoload.php";
+
 $pawn = new Pawn();
-$pawn->GetMoves("D5");
+$moves = $pawn->GetMoves("D5");
+print_r($moves);exit;
