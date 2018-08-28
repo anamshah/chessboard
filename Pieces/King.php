@@ -22,7 +22,7 @@ class King extends ChessBoard
                 if ($row - $i != 0)
                     if ($col - $j != 0)
                         if (!($this->row_letters[$row - $i] == $this->row_letters[$row] && ($col - $j) == $col))
-                            $valid_moves[] = $this->row_letters[$row - $i] . ($col - $j);
+                            $this->valid_moves[] = $this->row_letters[$row - $i] . ($col - $j);
             }
         }
 

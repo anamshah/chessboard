@@ -9,6 +9,11 @@ class Horse extends ChessBoard
 {
     var $valid_moves = [];
 
+    /**
+     * Horse Can move across the board only in 2.5 steps (2 vertical steps and 1 horizontal step)
+     * @param $strStartingMove
+     * @return array
+     */
     function GetMoves($strStartingMove)
     {
         /*get row*/

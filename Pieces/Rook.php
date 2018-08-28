@@ -9,6 +9,11 @@ class Rook extends ChessBoard
 {
     var $valid_moves = [];
 
+    /**
+     * Rook Can move across the board only vertically and horizontally
+     * @param $strStartingMove
+     * @return array
+     */
     function GetMoves($strStartingMove)
     {
         /*get row*/

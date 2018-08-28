@@ -7,6 +7,13 @@
 
 class Queen extends ChessBoard
 {
+
+    /**
+     * Queen Can move across the board in all 8 directions
+     * @param $strStartingMove
+     * @return array
+     */
+
     function GetMoves($strStartingMove)
     {
         $bishop = new Bishop();
